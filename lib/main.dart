@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import 'package:hello_mvvm_flutter/presentation/routes/routes.dart';
+
 void main() {
   runApp(GlobeApp());
 }
@@ -16,10 +18,8 @@ class GlobeApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      initialRoute: '',
-      getPages: [
-
-      ],
+      initialRoute: AppRoutes.dashboard,
+      getPages: AppRoutes.routes,
       // Optionaly define middleware or other settings here
     );
   }
