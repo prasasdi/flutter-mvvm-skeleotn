@@ -1,6 +1,6 @@
-# hello_mvvm_flutter
+# Flutter MVVM Skeleton
 
-A new Flutter project.
+A new Flutter project. With MVVM capabilities, elevated with GetX in order to achieve low boilerplate and such
 
 ## Getting Started
 
