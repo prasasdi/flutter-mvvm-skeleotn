@@ -35,3 +35,8 @@ If you had an idea to use a JSON. Whether it's serialize and deserialize, i got 
 > Q: Should I use immutable in order to utilize Rx?
 
 No, of course not. That's why I utilize Rx for Mutable as well!
+
+# How to use
+
+Make sure to properly setup the SDKs first then clone this repo. Example and documentation provided as well
+> Any question just feel free to ask!
