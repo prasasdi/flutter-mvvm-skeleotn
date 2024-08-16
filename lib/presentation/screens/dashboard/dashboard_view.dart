@@ -19,13 +19,13 @@ class DashboardView extends StatelessWidget
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Obx(() {
-                return Text('Title: ${viewModel.dashboardModel.value.title}');
+                return Text('Title: ${viewModel.mutDashboardModel.value.title}');
               }),
               Obx(() {
-                return Text('Items Count: ${viewModel.dashboardModel.value.count}');
+                return Text('Items Count: ${viewModel.mutDashboardModel.value.count}');
               }),
               ElevatedButton(onPressed: () {
-                viewModel.incrementCount();
+                viewModel.incrementCountMut();
               }, child: Text('Increase Count'))
             ],
           ))

@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
 import 'package:hello_mvvm_flutter/presentation/screens/dashboard/dashboard_model.dart';
-import 'dashboard_model.dart';
+import 'package:hello_mvvm_flutter/presentation/screens/dashboard/dashboard_model_mutable.dart';
 
 class DashboardViewModel extends GetxController
 {
@@ -10,7 +10,9 @@ class DashboardViewModel extends GetxController
     ..title = 'Initial Title'
     ..count = 0).obs;
 
-  // Example method to update the model
+  var mutDashboardModel = MutDashboardModel(id: 2, title: 'Initial Mutable Object', count: 0).obs;
+
+  // Example method to update the immutable model
   void updateTitle(String newTitle) {
     dashboardModel.value = dashboardModel.value.rebuild((b) => b
       ..title = newTitle);
@@ -26,4 +28,18 @@ class DashboardViewModel extends GetxController
       ..title = 'Reset Title'
       ..count = 0);
   }
+
+  // Example method to update the mutable model
+  void updateTitleMut(String newTitle) {
+    mutDashboardModel.value = mutDashboardModel.value.copyWith(title: newTitle);
+  }
+
+  void incrementCountMut() {
+    mutDashboardModel.value = mutDashboardModel.value.copyWith(count: mutDashboardModel.value.count + 1);
+  }
+
+  void resetDashboardMut() {
+    mutDashboardModel.value = MutDashboardModel(id: 2, title: 'Initial Mutable Object', count: 0);
+  }
+
 }
