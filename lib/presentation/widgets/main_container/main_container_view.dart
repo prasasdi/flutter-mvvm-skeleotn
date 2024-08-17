@@ -16,7 +16,10 @@ class MainContainerView extends StatelessWidget {
     return Scaffold(
       body: Row(
         children: <Widget>[
-          NavigationSidebar(), // The navigation sidebar
+          Container(
+            width: 200,
+            child: NavigationSidebar(), // The navigation sidebar,
+          ),
           Expanded(
             child: Obx(() {
               String currentRoute = _controller.currentView.value;
