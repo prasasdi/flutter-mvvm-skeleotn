@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import 'package:hello_mvvm_flutter/presentation/routes/routes.dart';
+import 'package:hello_mvvm_flutter/presentation/screens/dashboard/dashboard_view.dart';
+import 'package:hello_mvvm_flutter/presentation/widgets/main_container/main_container_view.dart';
 
 void main() {
   runApp(GlobeApp());
@@ -18,8 +20,12 @@ class GlobeApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      initialRoute: AppRoutes.dashboard,
+      /*
+      Pakai initialRoute untuk keperluan debug page
+       */
+      // initialRoute: AppRoutes.dashboard,
       getPages: AppRoutes.routes,
+      home: MainContainerView(child: DashboardView())
       // Optionaly define middleware or other settings here
     );
   }

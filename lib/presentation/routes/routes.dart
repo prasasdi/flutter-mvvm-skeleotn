@@ -3,6 +3,7 @@ import 'package:hello_mvvm_flutter/core/enums/app_pages.dart';
 
 // views
 import 'package:hello_mvvm_flutter/presentation/screens/dashboard/dashboard_view.dart';
+import 'package:hello_mvvm_flutter/presentation/widgets/main_container/main_container_view.dart';
 
 class AppRoutes
 {
