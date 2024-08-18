@@ -2,6 +2,17 @@
 
 A new Flutter project. With MVVM capabilities, elevated with GetX in order to achieve low boilerplate and such
 
+
+## Edit August 18 2024
+
+This repository been used for me personally to develop a Tab application, so in general it should be give you an idea about communication between view and view-model are
+Or, here's what you can do
+
+### To-Do
+
+1. I create an main-container where navbar and a view-controller are. Can you make it where the side nav-bar like X? If you can, you are wellcome to try it yourself
+2. There's a view-control controlled by the nav-bar. Go for it experiment with it
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
@@ -40,3 +51,8 @@ No, of course not. That's why I utilize Rx for Mutable as well!
 
 Make sure to properly setup the SDKs first then clone this repo. Example and documentation provided as well
 > Any question just feel free to ask!
+
+## Edit August 18 2024
+
+I originally prepare this repository to show how GetX are able to, but what really happen is i do develop it further into an Tab application by giving a navigation and a widgets, and so you'll see some bugs regarding the view. Other than that the view-model works perfectly well
+
