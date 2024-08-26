@@ -1,3 +1,4 @@
 enum AppPages {
   dashboard,
+  dummy,
 }

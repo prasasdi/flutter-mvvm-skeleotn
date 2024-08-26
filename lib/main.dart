@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 
 import 'package:hello_mvvm_flutter/presentation/routes/routes.dart';
 import 'package:hello_mvvm_flutter/presentation/screens/dashboard/dashboard_view.dart';
-import 'package:hello_mvvm_flutter/presentation/widgets/main_container/main_container_view.dart';
+import 'package:hello_mvvm_flutter/presentation/screens/home_screen/home_view.dart';
 
 void main() {
   runApp(GlobeApp());
@@ -25,7 +25,7 @@ class GlobeApp extends StatelessWidget {
        */
       // initialRoute: AppRoutes.dashboard,
       getPages: AppRoutes.routes,
-      home: MainContainerView(child: DashboardView())
+      home: HomeView(child: DashboardView())
       // Optionaly define middleware or other settings here
     );
   }
