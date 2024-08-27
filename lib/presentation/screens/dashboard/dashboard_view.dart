@@ -10,6 +10,7 @@ class DashboardView extends StatelessWidget
     final DashboardViewModel viewModel = Get.put(DashboardViewModel());
 
     return Scaffold(
+      backgroundColor: Color(0xFFF7F2FA),
       appBar: AppBar(
         title: Text('Dashboard'),
       ),
